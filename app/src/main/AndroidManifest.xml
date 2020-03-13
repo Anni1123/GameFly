@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/bird1"
+        android:icon="@drawable/bird2"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/bird1"
+        android:roundIcon="@drawable/bird2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".GameActivity"
