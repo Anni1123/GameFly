@@ -21,15 +21,33 @@ public class MainActivity extends AppCompatActivity {
 
 
     private boolean isMute;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_main);
+
+        Thread thread =new Thread(){
+            @Override
+            public void run() {
+                try {
+
+                    sleep(5000);
+                }
+                catch (Exception e){
+
+                    e.printStackTrace();
+                }
+                finally {
+
+                    Intent mainIntent=new Intent(MainActivity.this, GameActivity.class);
+                    startActivity(mainIntent);
+                }
+            }
+        };
+        thread.start();
 
         findViewById(R.id.play).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,5 +87,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    @Override
+    protected void onPause(){
+        super.onPause();
+        finish();
     }
 }

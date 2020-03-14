@@ -5,21 +5,14 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
-
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.Rect;
 import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Build;
-import android.view.MotionEvent;
-import android.view.SurfaceView;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
