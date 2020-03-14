@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".GameOverActivity"
-            ></activity>
+            android:screenOrientation="landscape"></activity>
         <activity
             android:name=".GameActivity"
             android:screenOrientation="landscape"
